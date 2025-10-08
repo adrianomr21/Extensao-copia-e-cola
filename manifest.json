@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "LMS Automação de Cadastro",
+  "version": "1.0",
+  "description": "Cole um bloco de texto e copie cada linha sequencialmente para a área de transferência.",
+  "permissions": [
+    "clipboardWrite",
+    "storage",
+    "scripting",
+    "activeTab",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "copy_next_line": {
+      "suggested_key": {
+        "default": "Ctrl+Space"
+      },
+      "description": "Copia a próxima linha para a área de transferência."
+    }
+  }
+}
+

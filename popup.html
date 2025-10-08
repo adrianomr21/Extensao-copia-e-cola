@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LMS Automação de Cadastro</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div id="initial-view">
+    <h3>Cole a questão abaixo:</h3>
+    <textarea id="questionText" rows="10" cols="40"></textarea>
+    <button id="startButton">Começar</button>
+  </div>
+  <div id="in-progress-view" style="display:none;">
+    <h3>Progresso:</h3>
+    <div id="lines-container"></div>
+    <button id="copyPreviousButton">Copiar Anterior</button>
+    <button id="copyNextButton">Copiar Próxima</button>
+    <button id="resetButton">Resetar</button>
+  </div>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
