@@ -17,3 +17,9 @@ Este projeto é uma Extensão do Chrome, indicado pela presença dos arquivos `m
 - `popup.html`, `popup.css`, `popup.js`: Definem e controlam a interface do usuário (UI) do pop-up da extensão, incluindo os botões "Começar", "Copiar Próxima", "Copiar Anterior" e "Resetar".
 - `offscreen.html`, `offscreen.js`: Usados para operações de cópia para a área de transferência em segundo plano.
 - `icons/`: Contém vários tamanhos de ícones para a extensão.
+
+Para instalar a extensão no chrome:
+- Deixe a pasta do projeto no pc
+- Acesse: chrome://extensions
+- Clique no botão "Carregar sem compactação" e selecione a pasta
+- Clique no botão "Saiba mais" e permita em janela anonima
